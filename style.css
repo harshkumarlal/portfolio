@@ -63,6 +63,7 @@ section {
 
 .about,
 .services,
+.experience,
 .skills,
 .projects,
 .contact,
@@ -71,6 +72,7 @@ footer {
 }
 
 .about .about-content,
+.experience .exp-content,
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content {
@@ -392,6 +394,65 @@ section .title::after {
 }
 
 .services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/*  Experience  */
+.experience,
+.projects {
+  color: #fff;
+  background: #111;
+}
+
+.experience .title::before,
+.projects .title::before {
+  background: #fff;
+}
+
+.experience .title::after,
+.projects .title::after {
+  background: #111;
+  content: "What I Provide ?";
+}
+
+.experience .exp-content .card {
+  background: #222;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.experience .exp-content .card:hover {
+  background: #1e3551;
+}
+
+.experience .exp-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.experience .exp-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.experience .exp-content .card i {
+  font-size: 50px;
+  color: #888e8d;
+  background: linear-gradient(135deg, #041d3d, #fff, crimson);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.experience .exp-content .card:hover i {
+  color: #fff;
+}
+
+.experience .exp-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
@@ -870,7 +931,7 @@ footer span a:hover {
     padding: 10px 30px;
   }
   .max-width {
-    max-width: 930px;
+    max-width: 1600px;
   }
   .about .about-content .column {
     width: 100%;
