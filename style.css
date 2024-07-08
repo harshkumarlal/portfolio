@@ -110,8 +110,8 @@ section .title::after {
   transform: translateX(-50%);
 }
 
-/*  Navbar  */
-.navbar {
+/*  navbar2  */
+.navbar2 {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -120,41 +120,41 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.navbar.sticky {
+.navbar2.sticky {
   padding: 15px 0;
   background: #1e3551;
 }
 
-.navbar .max-width {
+.navbar2 .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar .logo a {
+.navbar2 .logo a {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
 
 /*  Nav Logo Span Linear-Gradient  */
-.navbar .logo a span {
+.navbar2 .logo a span {
   background: linear-gradient(135deg, #041d3d, #fff, crimson);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease;
 }
 
-.navbar.sticky .logo a span {
+.navbar2.sticky .logo a span {
   color: #fff;
 }
 
-.navbar .menu li {
+.navbar2 .menu li {
   list-style: none;
   display: inline-block;
 }
 
-.navbar .menu li a {
+.navbar2 .menu li a {
   display: block;
   color: #fff;
   font-size: 18px;
@@ -163,11 +163,11 @@ section .title::after {
   transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover {
+.navbar2 .menu li a:hover {
   color: #1e3551;
 }
 
-.navbar.sticky .menu li a:hover {
+.navbar2.sticky .menu li a:hover {
   color: #fff;
 }
 
@@ -342,7 +342,7 @@ section .title::after {
 .services,
 .projects {
   color: #fff;
-  background: #111;
+  background: #1e3551;
 }
 
 .services .title::before,
@@ -352,22 +352,22 @@ section .title::after {
 
 .services .title::after,
 .projects .title::after {
-  background: #111;
+  background: #fff;
   content: "What I Provide ?";
 }
 
 .services .serv-content .card {
-  width: calc(33% - 20px);
-  background: #222;
+  background: #fff;
   text-align: center;
   border-radius: 10px;
-  padding: 50px 25px;
+  padding: 25px 25px;
+  margin-bottom: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .services .serv-content .card:hover {
-  background: #1e3551;
+  background: #fff;
 }
 
 .services .serv-content .card .box {
@@ -1232,7 +1232,7 @@ section .container {
     content: "\f00d";
   }
 
-  .navbar .menu {
+  .navbar2 .menu {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -1244,15 +1244,15 @@ section .container {
     transition: all 0.3s ease;
   }
 
-  .navbar .menu.active {
+  .navbar2 .menu.active {
     left: 0;
   }
 
-  .navbar .menu li {
+  .navbar2 .menu li {
     display: block;
   }
 
-  .navbar .menu li a {
+  .navbar2 .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
