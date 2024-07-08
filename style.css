@@ -212,8 +212,7 @@ section .title::after {
 /*  Home  */
 .home {
   display: flex;
-  background: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80") no-repeat 
-   center;
+  background: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -278,6 +277,7 @@ section .title::after {
 .about {
   background: radial-gradient(#e1efff, white);
 }
+
 .about .title::after {
   content: "—Who I Am ?—";
   text-overflow: ellipsis;
@@ -401,6 +401,7 @@ section .title::after {
 .skills {
   background: radial-gradient(#e1efff, white);
 }
+
 .skills .title::after {
   content: "—What I Know ?—";
 }
@@ -768,6 +769,7 @@ section .title::after {
 .social-menu ul li:nth-child(3) a:hover {
   background-color: #e4405f;
 }
+
 .social-menu ul li:nth-child(4) a:hover {
   background-color: #1da1f2;
 }
@@ -804,6 +806,7 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
+
 .section-title h2 {
   font-size: 14px;
   font-weight: 500;
@@ -834,11 +837,17 @@ footer span a:hover {
   font-family: 'Poppins', sans-serif;
   color: var(--white);
 }
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
 }
 
 .portfolio #portfolio-flters {
@@ -991,6 +1000,7 @@ footer span a:hover {
   bottom: 15px;
   right: 15px;
 }
+
 section .container {
   background: rgba(0, 0, 0, 0);
   padding: 30px;
@@ -1171,6 +1181,7 @@ section .container {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1180,10 +1191,12 @@ section .container {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /*  Media Query  */
 @keyframes pulsate {
   0% {
@@ -1196,6 +1209,7 @@ section .container {
     height: 350px;
     width: 350px;
   }
+
   section .title::after {
     bottom: -8px;
     font-size: 16px;
@@ -1213,9 +1227,11 @@ section .container {
     display: block;
     z-index: 999;
   }
+
   .menu-btn i.active:before {
     content: "\f00d";
   }
+
   .navbar .menu {
     position: fixed;
     height: 100vh;
@@ -1227,45 +1243,57 @@ section .container {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
+
   .navbar .menu.active {
     left: 0;
   }
+
   .navbar .menu li {
     display: block;
   }
+
   .navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
+
   .home .home-content .text-2 {
     font-size: 70px;
   }
+
   .home .home-content .text-3 {
     font-size: 35px;
   }
+
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
+
   .max-width {
     max-width: 930px;
   }
+
   .about .about-content .column {
     width: 100%;
   }
+
   .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
   .about .about-content .right {
     flex: 100%;
   }
+
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+
   .skills .skills-content .column,
   .contact .contact-content .column {
     width: 100%;
@@ -1277,15 +1305,19 @@ section .container {
   .max-width {
     padding: 0 23px;
   }
+
   .home .home-content .text-2 {
     font-size: 60px;
   }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
+
   .home .home-content a {
     font-size: 20px;
   }
+
   .services .serv-content .card {
     width: 100%;
   }
@@ -1295,23 +1327,29 @@ section .container {
   .home .home-content .text-2 {
     font-size: 50px;
   }
+
   .home .home-content .text-3 {
     font-size: 27px;
   }
+
   .about .about-content .right .text,
   .skills .skills-content .left .text {
     font-size: 19px;
   }
+
   .contact .right form .fields {
     flex-direction: column;
   }
+
   .contact .right form .name,
   .contact .right form .email {
     margin: 0;
   }
+
   .right form .error-box {
     width: 150px;
   }
+
   .scroll-up-btn {
     right: 15px;
     bottom: 15px;
